@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+
+  p {
+    @apply text-lg text-slate-500;
+  }
+
+  h1,
+  h2 {
+    @apply text-5xl leading-tight;
+  }
+
+  .button {
+    @apply bg-indigo-600 py-3 px-6 text-white text-base hover:bg-indigo-700 rounded-lg transition-all duration-200 ease-in-out;
+  }
+
+  section {
+    @apply py-32 px-4 lg:px-12;
+  }
+
+  span {
+    @apply text-indigo-600;
+  }
+
+  .badge {
+    @apply py-2 bg-white/10 inline rounded-3xl text-white text-base backdrop-blur-sm border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]
+  }
+
+  .badge-right {
+    @apply pl-10 pr-4
+  }
+
+  .badge-left {
+    @apply pr-10 pl-4
+  }
+}
