@@ -13,7 +13,7 @@ export default function Feature() {
             <div className="py-2" />
             <p className="leading-normal">
               Ti offriamo un sito web moderno, bello e completamente
-              personalizzabile, pronto all'uso per te. Puoi modificarlo e
+              personalizzabile, pronto all&apos;uso per te. Puoi modificarlo e
               aggiornarlo in tempo reale, e sarà online in pochi secondi.
               Attraverso questo sito, i tuoi clienti potranno scoprire chi sei e
               iscriversi alle tue lezioni. Non sei soddisfatto del template del
