@@ -88,7 +88,7 @@ export default function Roadmap() {
             </div>
             <div
               className={`badge border-2 block transition-all duration-[400ms] ease-in-out md:hidden px-4 ${
-                firstBadgeIsHalfwayVisible
+                secondBadgeIsHalfwayVisible
                   ? "line-through border-[#34D399]"
                   : "border-transparent"
               }`}
