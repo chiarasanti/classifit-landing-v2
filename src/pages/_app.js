@@ -5,9 +5,11 @@ import { useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 
 export const isTopScrolledAtom = atom(true);
+export const isHeroScrolledAtom = atom(true);
 
 export default function App({ Component, pageProps }) {
   const [isTopScrolled, setIsTopScrolled] = useAtom(isTopScrolledAtom);
+  const [isHeroScrolled, setIsHeroScrolled] = useAtom(isHeroScrolledAtom);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,12 @@ export default function App({ Component, pageProps }) {
       }
       if (!isTopScrolled && window.scrollY <= 50) {
         setIsTopScrolled(true);
+      }
+      if (isHeroScrolled && window.scrollY > 500) {
+        setIsHeroScrolled(false);
+      }
+      if (!isHeroScrolled && window.scrollY <= 450) {
+        setIsHeroScrolled(true);
       }
     };
 
