@@ -27,7 +27,7 @@ export default function Navbar() {
           <svg
             width="107"
             height="25"
-            class="inline-block"
+            className="inline-block w-26"
             viewBox="0 0 107 25"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +71,13 @@ export default function Navbar() {
             className="button hidden md:block"
           >
             Prova la demo gratuita
+          </Link>
+          <Link
+            href="/mailing-list"
+            target="_blank"
+            className="button block md:hidden"
+          >
+            Iscriviti
           </Link>
         </div>
       </div>

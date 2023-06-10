@@ -17,7 +17,7 @@
   }
 
   .button {
-    @apply bg-indigo-600 py-3 px-6 text-white text-base hover:bg-indigo-700 rounded-lg transition-all duration-200 ease-in-out;
+    @apply bg-indigo-600 py-3 px-4 md:px-6 text-white text-base hover:bg-indigo-700 rounded-lg transition-all duration-200 ease-in-out;
   }
 
   section {
