@@ -5,8 +5,18 @@ export default function Footer() {
     <footer className="flex justify-between items-center py-10 px4 lg:px-12 bg-[url('/background.svg')] bg-center bg-cover">
       <div className="flex gap-4">
         <p className="text-base">2023 Classifit</p>
-        <Link href="#">Privacy Policy</Link>
-        <Link href="#">Cookie Policy</Link>
+        <Link
+          href="https://www.iubenda.com/privacy-policy/40888749/legal"
+          target="_blank"
+        >
+          Privacy Policy
+        </Link>
+        <Link
+          href="https://www.iubenda.com/privacy-policy/40888749/cookie-policy"
+          target="_blank"
+        >
+          Cookie Policy
+        </Link>
       </div>
       <div className="flex gap-10 items-center">
         <Link href="mailto:chiarasanti.des@gmail.com" target="_blank">
