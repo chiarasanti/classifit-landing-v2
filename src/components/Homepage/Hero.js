@@ -1,4 +1,4 @@
-import { isHeroScrolledAtom, isTopScrolledAtom } from "@/pages/_app";
+import { isTopScrolledAtom } from "@/pages/_app";
 import { useAtom } from "jotai";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export default function Hero() {
               src="/hero-1.svg"
               width="1920"
               height="1080"
-              className={`w-72 absolute left-12 z-40 transition-all delay-200 duration-[600ms] ease-in-out ${
+              className={`hidden lg:block w-72 absolute left-12 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
                 isTopScrolled ? "bottom-[60px]" : "bottom-[250px]"
               }`}
             />
@@ -44,13 +44,13 @@ export default function Hero() {
               height="1080"
               className={`w-9/12 mx-auto rounded-xl ${
                 isTopScrolled ? notScrolledImage : scrolledImage
-              } transition-all duration-[600ms] ease-in-out`}
+              } transition-all duration-[600ms] delay-100 ease-in-out`}
             />
             <Image
               src="/hero-2.svg"
               width="1080"
               height="1920"
-              className={`w-48 absolute right-24 z-40 transition-all delay-200 duration-[600ms] ease-in-out ${
+              className={`hidden lg:block w-48 absolute right-24 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
                 isTopScrolled ? "bottom-[200px]" : "bottom-[-30px]"
               }`}
             />

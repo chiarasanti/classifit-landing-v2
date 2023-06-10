@@ -31,12 +31,4 @@
   .badge {
     @apply py-2 bg-white/10 inline rounded-3xl text-white text-base backdrop-blur-sm border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]
   }
-
-  .badge-right {
-    @apply pl-10 pr-4
-  }
-
-  .badge-left {
-    @apply pr-10 pl-4
-  }
 }
