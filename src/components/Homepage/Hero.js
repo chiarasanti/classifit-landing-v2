@@ -1,23 +1,15 @@
+import { isTopScrolledAtom } from "@/pages/_app";
+import { useAtom } from "jotai";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+
 const scrolledImage =
   "shadow-[15px_15px_0px_0px_#4f46e5] -translate-x-[15px] -translate-y-[15px]";
 const notScrolledImage = "shadow-none";
 
 export default function Hero() {
-  const [imageClassName, setImageClassName] = useState(notScrolledImage);
+  const [isTopScrolled] = useAtom(isTopScrolledAtom);
 
-  const handleScroll = (imageClassName) => {
-    if (imageClassName !== scrolledImage && window.scrollY >= 100) {
-      setImageClassName(scrolledImage);
-    } else if (imageClassName === scrolledImage && window.scrollY < 100) {
-      setImageClassName(notScrolledImage);
-    }
-  };
-  useEffect(() => {
-    window.onscroll = () => handleScroll(imageClassName);
-  }, [imageClassName]);
   return (
     <>
       <div className="py-36 text-center relative bg-[url('/background.svg')] bg-center bg-cover lg:bg-contain 2xl:bg-cover px-4 md:px-12">
@@ -41,7 +33,9 @@ export default function Hero() {
             src="/image-hero.png"
             width="1920"
             height="1080"
-            className={`w-9/12 mx-auto rounded-xl ${imageClassName} transition-all duration-[600ms] ease-in-out`}
+            className={`w-9/12 mx-auto rounded-xl ${
+              isTopScrolled ? notScrolledImage : scrolledImage
+            } transition-all duration-[600ms] ease-in-out`}
           />
         </div>
       </div>

@@ -1,26 +1,18 @@
+import { isTopScrolledAtom } from "@/pages/_app";
+import { useAtom } from "jotai";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+
 const scrolledNav =
   "top-0 !inset-x-0 rounded-none py-2 bg-white/70 backdrop-blur-sm";
 const notScrolledNav =
   "top-4 inset-x-4 lg:inset-x-12 rounded-full py-4 bg-white/2 backdrop-blur-md shadow-lg";
-export default function Navbar() {
-  const [headerClassName, setHeaderClassName] = useState(notScrolledNav);
 
-  const handleScroll = (headerClassName) => {
-    if (headerClassName !== scrolledNav && window.scrollY >= 100) {
-      setHeaderClassName(scrolledNav);
-    } else if (headerClassName === scrolledNav && window.scrollY < 100) {
-      setHeaderClassName(notScrolledNav);
-    }
-  };
-  useEffect(() => {
-    window.onscroll = () => handleScroll(headerClassName);
-  }, [headerClassName]);
+export default function Navbar() {
+  const [isTopScrolled] = useAtom(isTopScrolledAtom);
 
   return (
     <nav
-      className={`fixed z-50 select-none text-sm transition-all duration-200 ease-in-out shadow-slate-500/10 border border-slate-100/30 ${headerClassName}`}
+      className={`fixed z-50 select-none text-sm transition-all duration-200 ease-in-out shadow-slate-500/10 border border-slate-100/30 ${isTopScrolled ? notScrolledNav : scrolledNav}`}
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="flex justify-between px-6 items-center">
