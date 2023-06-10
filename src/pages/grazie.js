@@ -14,8 +14,8 @@ export default function Thanks() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="flex justify-center items-center h-screen w-full text-center">
-        <div className="w-8/12 mx-auto justify-center items-center text-center">
+      <div className="flex justify-center items-center h-screen w-full text-center px-4 md:px-12">
+        <div className="lg:w-8/12 mx-auto justify-center items-center text-center">
           <Link href="/">
             <svg
               width="134"

@@ -8,12 +8,12 @@
   }
 
   p {
-    @apply text-lg text-slate-500;
+    @apply text-sm md:text-lg text-slate-500;
   }
 
   h1,
   h2 {
-    @apply text-5xl leading-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl lg:leading-tight;
   }
 
   .button {
@@ -21,7 +21,7 @@
   }
 
   section {
-    @apply py-32 px-4 lg:px-12;
+    @apply py-24 lg:py-32 px-4 md:px-12;
   }
 
   span {

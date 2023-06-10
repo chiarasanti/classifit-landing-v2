@@ -2,42 +2,44 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center py-10 px4 lg:px-12 bg-[url('/background.svg')] bg-center bg-cover">
-      <div className="flex gap-4">
-        <p className="text-base">2023 Classifit</p>
-        <Link
-          href="https://www.iubenda.com/privacy-policy/40888749/legal"
-          target="_blank"
-        >
-          Privacy Policy
-        </Link>
-        <Link
-          href="https://www.iubenda.com/privacy-policy/40888749/cookie-policy"
-          target="_blank"
-        >
-          Cookie Policy
-        </Link>
-      </div>
-      <div className="flex gap-10 items-center">
-        <Link href="mailto:chiarasanti.des@gmail.com" target="_blank">
-          <svg
-            width="20"
-            height="16"
-            viewBox="0 0 20 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 4.68555V12.857C0 13.6147 0.30102 14.3415 0.836838 14.8773C1.37266 15.4131 2.09938 15.7141 2.85714 15.7141H17.1429C17.9006 15.7141 18.6273 15.4131 19.1632 14.8773C19.699 14.3415 20 13.6147 20 12.857V4.68555L11.4971 9.91698C11.0469 10.194 10.5286 10.3406 10 10.3406C9.47137 10.3406 8.9531 10.194 8.50286 9.91698L0 4.68555Z"
-              fill="#4F46E5"
-            />
-            <path
-              d="M20 3.00762V2.85714C20 2.09938 19.699 1.37266 19.1632 0.836838C18.6273 0.30102 17.9006 0 17.1429 0H2.85714C2.09938 0 1.37266 0.30102 0.836838 0.836838C0.30102 1.37266 0 2.09938 0 2.85714V3.00762L9.25143 8.70095C9.47655 8.83945 9.73568 8.91278 10 8.91278C10.2643 8.91278 10.5234 8.83945 10.7486 8.70095L20 3.00762Z"
-              fill="#4F46E5"
-            />
-          </svg>
-        </Link>
-        {/* <Link href="#">
+    <div className="bg-[url('/background.svg')] bg-center bg-cover">
+      <div className="max-w-[1440px] mx-auto">
+        <footer className="lg:flex justify-between items-center py-10 px-4 md:px-12">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <p className="text-base">© 2023 Classifit</p>
+            <Link
+              href="https://www.iubenda.com/privacy-policy/40888749/legal"
+              target="_blank"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="https://www.iubenda.com/privacy-policy/40888749/cookie-policy"
+              target="_blank"
+            >
+              Cookie Policy
+            </Link>
+          </div>
+          <div className="flex gap-10 items-center mt-12 lg:mt-0">
+            <Link href="mailto:chiarasanti.des@gmail.com" target="_blank">
+              <svg
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 4.68555V12.857C0 13.6147 0.30102 14.3415 0.836838 14.8773C1.37266 15.4131 2.09938 15.7141 2.85714 15.7141H17.1429C17.9006 15.7141 18.6273 15.4131 19.1632 14.8773C19.699 14.3415 20 13.6147 20 12.857V4.68555L11.4971 9.91698C11.0469 10.194 10.5286 10.3406 10 10.3406C9.47137 10.3406 8.9531 10.194 8.50286 9.91698L0 4.68555Z"
+                  fill="#4F46E5"
+                />
+                <path
+                  d="M20 3.00762V2.85714C20 2.09938 19.699 1.37266 19.1632 0.836838C18.6273 0.30102 17.9006 0 17.1429 0H2.85714C2.09938 0 1.37266 0.30102 0.836838 0.836838C0.30102 1.37266 0 2.09938 0 2.85714V3.00762L9.25143 8.70095C9.47655 8.83945 9.73568 8.91278 10 8.91278C10.2643 8.91278 10.5234 8.83945 10.7486 8.70095L20 3.00762Z"
+                  fill="#4F46E5"
+                />
+              </svg>
+            </Link>
+            {/* <Link href="#">
           <svg
             width="20"
             height="20"
@@ -51,7 +53,9 @@ export default function Footer() {
             />
           </svg>
         </Link> */}
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
   );
 }
