@@ -63,6 +63,21 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-K5BCRCHP85');
         `}
       </Script>
+      {/* Brevo Conversations {literal} */}
+      <Script id="brevo" strategy="afterInteractive">
+        {`
+          (function(d, w, c) {
+            w.BrevoConversationsID = '6481dd1c6421704139338d1f';
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'BrevoConversations');
+        `}
+      </Script>
       <Component {...pageProps} />
       <CookieConsent
         style={{ background: "#4f46e5" }}
