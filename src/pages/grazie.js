@@ -70,10 +70,13 @@ export default function Thanks() {
           <p>
             Con questa iscrizione farai parte della realizzazione di Classifit.
             Sarai il primo a sapere quando la demo sarà disponibile e quando
-            potrai iniziare ad utilizzarla (gratuitamente!).
+            potrai iniziare ad utilizzarla. Dovrebbe esserti arrivata un'email
+            di conferma dell'iscrizione.
           </p>
           <div className="py-6" />
-          <Link href="/" className="button">Torna a Classifit</Link>
+          <Link href="/" className="button">
+            Torna a Classifit
+          </Link>
         </div>
       </div>
     </>
