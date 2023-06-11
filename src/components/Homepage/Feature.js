@@ -13,11 +13,11 @@ export default function Feature() {
               </h2>
               <div className="py-2" />
               <p className="leading-normal">
-                Ti offriamo un sito web moderno, bello e completamente
-                personalizzabile, pronto all&apos;uso per te. Puoi modificarlo e
-                aggiornarlo in tempo reale, e sarà online in pochi secondi.
-                Attraverso questo sito, i tuoi clienti potranno scoprire chi sei
-                e iscriversi alle tue lezioni. Non sei soddisfatto del template
+                Per te viene generato in pochi minuti un sito web moderno, bello
+                e completamente personalizzabile. Puoi modificarlo e aggiornarlo
+                in tempo reale, e sarà online in pochi secondi. Attraverso
+                questo sito, i tuoi clienti potranno scoprire chi sei e
+                iscriversi alle tue lezioni. Non sei soddisfatto del template
                 del tuo sito web? Contattaci e otterrai un design personalizzato
                 su misura, creato appositamente per te.
               </p>
@@ -63,11 +63,11 @@ export default function Feature() {
               <div className="py-2" />
               <p className="leading-normal">
                 Gestisci le tue lezioni tramite una comoda vista a calendario.
-                La piattaforma di permette di tenere traccia degli iscritti alle
-                lezioni, dei pacchetti e di tutti gli iscritti al tuo sito web.
+                La piattaforma ti permette di tenere traccia degli iscritti alle
+                lezioni, dei pacchetti e di tutti gli utenti del tuo sito web.
                 Non devi affidarti alla memoria o a carta e penna: trova subito
-                tutte le informazioni che cerchi, in qualunque momento, in un
-                sistema consistente e strutturato.
+                le informazioni che cerchi, in qualunque momento, in un sistema
+                consistente e strutturato.
               </p>
             </div>
           </div>
