@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { atom, useAtom } from "jotai";
 import Head from "next/head";
+import Script from "next/script";
 import { useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 
@@ -48,6 +49,20 @@ export default function App({ Component, pageProps }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-K5BCRCHP85"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-K5BCRCHP85');
+        `}
+      </Script>
       <Component {...pageProps} />
       <CookieConsent
         style={{ background: "#4f46e5" }}
