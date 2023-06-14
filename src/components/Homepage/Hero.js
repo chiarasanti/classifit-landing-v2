@@ -51,7 +51,7 @@ export default function Hero() {
               quality={75}
               alt=""
               sizes="75vw"
-              className={`w-9/12 mx-auto rounded-xl ${
+              className={`w-[95%] lg:w-9/12 mx-auto rounded-xl ${
                 isTopScrolled ? notScrolledImage : scrolledImage
               } transition-all duration-[600ms] delay-100 ease-in-out`}
             />
