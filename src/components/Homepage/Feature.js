@@ -1,4 +1,8 @@
 import Image from "next/image";
+import platform1 from "../../../public/platform-1.png";
+import platform2 from "../../../public/platform-2.png";
+import site1 from "../../../public/site-1.png";
+import site2 from "../../../public/site-2.png";
 
 export default function Feature() {
   return (
@@ -25,16 +29,20 @@ export default function Feature() {
           </div>
           <div className="h-full lg:w-1/2 flex flex-col static justify-end items-start lg:py-48 lg:gap-48 gap-16 mt-16 lg:mt-0">
             <Image
-              src="/site-1.svg"
-              width="1920"
-              height="1080"
-              className="w-full mx-auto"
+              src={site1}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="(max-width: 1024px) 100vw, 40vw"
             />
             <Image
-              src="/site-2.svg"
-              width="1920"
-              height="1080"
-              className="w-full mx-auto"
+              src={site2}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>
         </div>
@@ -42,16 +50,20 @@ export default function Feature() {
         <div className="flex flex-col lg:flex-row justify-center items-start relative w-full lg:gap-44">
           <div className="lg:h-full lg:w-1/2 flex flex-col static justify-end items-start lg:py-48 lg:gap-48 gap-16 mt-16 lg:mt-0">
             <Image
-              src="/platform-1.svg"
-              width="1920"
-              height="1080"
-              className="w-full mx-auto"
+              src={platform1}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="(max-width: 1024px) 100vw, 40vw"
             />
             <Image
-              src="/platform-2.svg"
-              width="1920"
-              height="1080"
-              className="w-full mx-auto"
+              src={platform2}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>
           <div className="lg:h-screen lg:w-1/2 lg:sticky top-0 items-center justify-center lg:flex order-first lg:order-last mt-24 lg:mt-0">

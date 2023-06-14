@@ -2,6 +2,9 @@ import { isTopScrolledAtom } from "@/pages/_app";
 import { useAtom } from "jotai";
 import Image from "next/image";
 import Link from "next/link";
+import hero1 from "../../../public/hero-1.png";
+import hero2 from "../../../public/hero-2.png";
+import imageHero from "../../../public/image-hero.png";
 
 const scrolledImage =
   "shadow-[15px_15px_0px_0px_#4f46e5] -translate-x-[15px] -translate-y-[15px]";
@@ -31,26 +34,35 @@ export default function Hero() {
           <div className="py-12" />
           <div className="relative">
             <Image
-              src="/hero-1.svg"
-              width="1920"
-              height="1080"
-              className={`hidden lg:block w-72 absolute left-12 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
+              src={hero1}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="288px"
+              className={`hidden lg:block w-[288px] absolute left-12 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
                 isTopScrolled ? "bottom-[60px]" : "bottom-[250px]"
               }`}
             />
             <Image
-              src="/image-hero.png"
-              width="1920"
-              height="1080"
+              src={imageHero}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="75vw"
               className={`w-9/12 mx-auto rounded-xl ${
                 isTopScrolled ? notScrolledImage : scrolledImage
               } transition-all duration-[600ms] delay-100 ease-in-out`}
             />
             <Image
-              src="/hero-2.svg"
-              width="1080"
-              height="1920"
-              className={`hidden lg:block w-48 absolute right-24 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
+              src={hero2}
+              placeholder="blur"
+              priority={true}
+              quality={75}
+              alt=""
+              sizes="192px"
+              className={`hidden lg:block w-[192px] absolute right-24 z-40 transition-all delay-300 duration-[600ms] ease-in-out ${
                 isTopScrolled ? "bottom-[200px]" : "bottom-[-30px]"
               }`}
             />
