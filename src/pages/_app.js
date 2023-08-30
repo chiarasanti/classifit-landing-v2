@@ -6,11 +6,9 @@ import { useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 
 export const isTopScrolledAtom = atom(true);
-export const isHeroScrolledAtom = atom(true);
 
 export default function App({ Component, pageProps }) {
   const [isTopScrolled, setIsTopScrolled] = useAtom(isTopScrolledAtom);
-  const [isHeroScrolled, setIsHeroScrolled] = useAtom(isHeroScrolledAtom);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +17,6 @@ export default function App({ Component, pageProps }) {
       }
       if (!isTopScrolled && window.scrollY <= 50) {
         setIsTopScrolled(true);
-      }
-      if (isHeroScrolled && window.scrollY > 500) {
-        setIsHeroScrolled(false);
-      }
-      if (!isHeroScrolled && window.scrollY <= 450) {
-        setIsHeroScrolled(true);
       }
     };
 
@@ -40,11 +32,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
@@ -61,21 +49,6 @@ export default function App({ Component, pageProps }) {
           gtag('js', new Date());
 
           gtag('config', 'G-K5BCRCHP85');
-        `}
-      </Script>
-      {/* Brevo Conversations {literal} */}
-      <Script id="brevo" strategy="afterInteractive">
-        {`
-          (function(d, w, c) {
-            w.BrevoConversationsID = '6481dd1c6421704139338d1f';
-            w[c] = w[c] || function() {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            var s = d.createElement('script');
-            s.async = true;
-            s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
-            if (d.head) d.head.appendChild(s);
-        })(document, window, 'BrevoConversations');
         `}
       </Script>
       <Component {...pageProps} />

@@ -1,9 +1,7 @@
 import About from "@/components/Homepage/About";
 import Benefit from "@/components/Homepage/Benefit";
-import CTA from "@/components/Homepage/CTA";
 import Feature from "@/components/Homepage/Feature";
 import Hero from "@/components/Homepage/Hero";
-import Roadmap from "@/components/Homepage/Roadmap";
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
 import Head from "next/head";
@@ -26,8 +24,6 @@ export default function Home() {
       <About />
       <Feature />
       <Benefit />
-      <Roadmap />
-      <CTA />
       <Footer />
     </>
   );

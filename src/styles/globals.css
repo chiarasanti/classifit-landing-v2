@@ -4,20 +4,20 @@
 
 @layer base {
   html {
-    @apply font-sans;
+    @apply font-sans font-light;
   }
 
   p {
-    @apply text-base md:text-lg text-slate-500;
+    @apply text-base md:text-lg font-light text-black/60;
   }
 
   h1,
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl lg:leading-tight;
+    @apply text-3xl md:text-[40px] leading-tight;
   }
 
   .button {
-    @apply bg-indigo-600 py-3 px-4 md:px-6 text-white text-base hover:bg-indigo-700 rounded-lg transition-all duration-200 ease-in-out;
+    @apply bg-white py-2 px-4 md:px-6 text-black text-base rounded-full transition-all duration-200 ease-in-out;
   }
 
   section {
@@ -32,7 +32,11 @@
     @apply py-2 bg-white/10 inline rounded-3xl text-white text-base backdrop-blur-sm border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]
   }
 
+  .container {
+    @apply max-w-[1110px]
+  }
+
   ::selection {
-    @apply bg-indigo-600 text-white
+    @apply bg-black text-white
   }
 }
