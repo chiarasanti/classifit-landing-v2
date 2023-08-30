@@ -53,6 +53,7 @@ export default function Hero() {
               width="1920"
               height="1080"
               className="w-full mt-24"
+              alt="Schermata clienti di Classifit"
             ></Image>
           </section>
         </div>

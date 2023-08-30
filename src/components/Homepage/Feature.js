@@ -29,7 +29,7 @@ export default function Feature() {
   ];
 
   const features = featuresData.map((ftr) => (
-    <div>
+    <div key={ftr.number}>
       <p className="text-2xl font-medium text-black">
         <span className="md:mr-6">{ftr.number}</span> {ftr.title}{" "}
       </p>
@@ -54,6 +54,7 @@ export default function Feature() {
                 width="1080"
                 height="1080"
                 className="w-[550px]"
+                alt="Classifit - Piattaforma di amministrazione"
               />
             </div>
           </div>
@@ -64,6 +65,7 @@ export default function Feature() {
                 width="1080"
                 height="1080"
                 className="w-[550px]"
+                alt="Classifit - sito auto generato"
               />
             </div>
           </div>
