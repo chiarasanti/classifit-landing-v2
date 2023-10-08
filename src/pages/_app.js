@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
       </Script>
       <Component {...pageProps} />
       <CookieConsent
-        style={{ background: "#4f46e5" }}
+        style={{ background: "#EEF2FF", color: "#222220" }}
         buttonText="Ho capito"
         buttonStyle={{
           color: "#FFFFFF",

@@ -1,8 +1,9 @@
-import About from "@/components/Homepage/About";
-import Benefit from "@/components/Homepage/Benefit";
-import Feature from "@/components/Homepage/Feature";
 import Hero from "@/components/Homepage/Hero";
+import Images from "@/components/Homepage/Images";
+import Services from "@/components/Homepage/Services";
+import AboutUs from "@/components/Layout/AboutUs";
 import Footer from "@/components/Layout/Footer";
+import Guarantee from "@/components/Layout/Guarantee";
 import Navbar from "@/components/Layout/Navbar";
 import Head from "next/head";
 
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Classifit - Un modo migliore di gestire il tuo studio
+          Classifit - Porta il tuo studio al prossimo livello
         </title>
         <meta
           name="description"
@@ -21,9 +22,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <About />
-      <Feature />
-      <Benefit />
+      <Images />
+      <Services />
+      <Guarantee />
+      <AboutUs />
       <Footer />
     </>
   );

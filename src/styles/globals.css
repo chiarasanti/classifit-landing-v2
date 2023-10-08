@@ -4,16 +4,7 @@
 
 @layer base {
   html {
-    @apply font-sans font-light;
-  }
-
-  p {
-    @apply text-base md:text-lg font-light text-black/60;
-  }
-
-  h1,
-  h2 {
-    @apply text-3xl md:text-[40px] leading-tight;
+    @apply font-sans font-light overflow-x-hidden;
   }
 
   .button {
@@ -21,19 +12,31 @@
   }
 
   section {
-    @apply py-24 lg:py-32 px-4 md:px-12;
+    @apply py-24 lg:py-40;
   }
 
-  span {
-    @apply text-indigo-600;
+  h1 {
+    @apply text-4xl
   }
 
-  .badge {
-    @apply py-2 bg-white/10 inline rounded-3xl text-white text-base backdrop-blur-sm border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]
+  h2 {
+    @apply lg:text-3xl text-2xl
+  }
+
+  a {
+    @apply text-base 
+  }
+
+  p {
+    @apply text-xl leading-relaxed
   }
 
   .container {
-    @apply max-w-[1110px]
+    @apply max-w-[1110px] mx-auto px-4
+  }
+
+  .nav-link {
+    @apply text-base text-white/60 hover:text-white
   }
 
   ::selection {
