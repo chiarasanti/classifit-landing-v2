@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-indigo-600 text-white">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <section>
           <div>
             <p className="text-base text-white/60">Scrivici</p>

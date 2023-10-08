@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <div className="bg-indigo-600 h-screen flex items-center justify-center relative">
       <div className="container text-white">
-        <h1 className="lg:text-7xl text-4xl font-semibold lg:w-2/3">
+        <h1 className="lg:text-7xl text-4xl font-semibold lg:w-2/3" data-aos="fade-up">
           Porta il tuo studio al prossimo livello
         </h1>
         <div className="py-6" />
-        <p className="text-xl lg:w-[40%] leading-relaxed">
+        <p className="text-xl lg:w-[40%] leading-relaxed" data-aos="fade-up">
           Classifit si occupa di progettare e produrre il{" "}
           <span className="underline italic underline-offset-4">sito web</span>{" "}
           per il tuo studio. Inoltre, integra il tutto con un{" "}
@@ -19,7 +19,7 @@ export default function Hero() {
           un&apos;unica soluzione.
         </p>
         <div className="py-10" />
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-12" data-aos="fade-up">
           <Link
             href="https://calendly.com/classifit/contatti"
             target="_blank"

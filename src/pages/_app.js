@@ -3,7 +3,10 @@ import { atom, useAtom } from "jotai";
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect } from "react";
+import AOS from "aos";
 import CookieConsent from "react-cookie-consent";
+
+import "aos/dist/aos.css";
 
 export const isTopScrolledAtom = atom(true);
 
@@ -25,6 +28,14 @@ export default function App({ Component, pageProps }) {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [isTopScrolled]);
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
 
   return (
     <>
