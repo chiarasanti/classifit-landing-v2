@@ -25,12 +25,12 @@ export default function AboutUs() {
               abbiamo l’onore di collaborare.
             </p>
             <div className="py-9" />
-            <Link href="https://www.instagram.com/app.classi.fit/" target="_blank" className="text-indigo-600">
+            <Link href="https://www.instagram.com/app.classi.fit/" target="_blank" className="text-indigo-600 after:bg-indigo-600">
               Instagram
             </Link>
             <br />
             <div className="py-2" />
-            <Link href="https://www.facebook.com/profile.php?id=61551922481738"  target="_blank" className="text-indigo-600">
+            <Link href="https://www.facebook.com/profile.php?id=61551922481738"  target="_blank" className="text-indigo-600 after:bg-indigo-600">
               Facebook
             </Link>
           </section>

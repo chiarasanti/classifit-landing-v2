@@ -8,20 +8,20 @@ export default function Footer() {
           <div>
             <p className="text-base text-white/60">Scrivici</p>
             <div className="py-2" />
-            <Link href="mailto:classifit.studio@gmail.com" target="_blank"><h2 className="font-semibold">classifit.studio@gmail.com</h2></Link>
+            <Link href="mailto:classifit.studio@gmail.com" target="_blank"><h2 className="font-semibold after:bg-white">classifit.studio@gmail.com</h2></Link>
           </div>
           <div className="py-12" />
           <div className="lg:flex justify-between items-center">
             <div className="lg:flex gap-24">
               <div className="flex flex-col gap-4">
                 <p className="text-base text-white/60">Contatti</p>
-                <Link href="tel:+393518039192">+39 351 803 9192</Link>
-                <Link href="mailto:classifit.studio@gmail.com" target="_blank">classifit.studio@gmail.com</Link>
+                <Link href="tel:+393518039192" className="after:bg-white">+39 351 803 9192</Link>
+                <Link href="mailto:classifit.studio@gmail.com" target="_blank" className="after:bg-white">classifit.studio</Link>
               </div>
               <div className="flex flex-col gap-4 mt-12 lg:mt-0">
                 <p className="text-base text-white/60">Link utili</p>
-                <Link href="https://www.instagram.com/app.classi.fit/" target="_blank">Instagram</Link>
-                <Link href="https://www.facebook.com/profile.php?id=61551922481738" target="_blank">Facebook</Link>
+                <Link href="https://www.instagram.com/app.classi.fit/" target="_blank" className="after:bg-white">Instagram</Link>
+                <Link href="https://www.facebook.com/profile.php?id=61551922481738" target="_blank" className="after:bg-white">Facebook</Link>
               </div>
             </div>
             <div className="lg:text-right mt-24 lg:mt-0">
@@ -40,10 +40,10 @@ export default function Footer() {
               </svg>
 
               <div className="py-8" />
-              <Link href="https://www.iubenda.com/privacy-policy/40888749" target="_blank" className="text-white/60">
+              <Link href="https://www.iubenda.com/privacy-policy/40888749" target="_blank" className="text-white/60 hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="https://www.iubenda.com/privacy-policy/40888749/cookie-policy" target="_blank" className="ml-8 text-white/60">
+              <Link href="https://www.iubenda.com/privacy-policy/40888749/cookie-policy" target="_blank" className="ml-8 text-white/60 hover:text-white">
                 Cookie Policy
               </Link>
             </div>

@@ -19,13 +19,33 @@ export default function Hero() {
           un&apos;unica soluzione.
         </p>
         <div className="py-10" />
-        <Link
-          href="https://calendly.com/classifit/contatti"
-          target="_blank"
-          className="button inline-block"
-        >
-          Prenota una chiamata - Senza impegno
-        </Link>
+        <div className="flex items-center gap-12">
+          <Link
+            href="https://calendly.com/classifit/contatti"
+            target="_blank"
+            className="button"
+          >
+            <div className="flex gap-2 hover:gap-4 transition-all duration-200 ease-in-out">
+              <span className="text-black text-base">
+                Prenota una chiamata - Senza impegno
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+          </Link>
+        </div>
       </div>
       <svg
         width="369"
