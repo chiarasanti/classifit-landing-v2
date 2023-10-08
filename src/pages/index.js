@@ -11,14 +11,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Classifit - Porta il tuo studio al prossimo livello
-        </title>
+        <title>Classifit - Sito web su misura e gestionale per il tuo studio di pilates</title>
+        <meta property="og:title" content="Classifit - Sito web su misura e gestionale per il tuo studio di pilates" />
+        <meta property="og:url" content="https://www.classi.fit/" />
         <meta
-          name="description"
-          content="Potenzia la tua presenza online e gestisci lezioni, pacchetti e clienti - Tutto con la stessa piattaforma. La piattaforma perfetta per il tuo studio di fitness."
+          property="og:description"
+          content="Porta il tuo studio al prossimo livello. Con Classifit puoi avere un sito web su misura e un gestionale online per il tuo studio di fitness."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/social-preview.png" />
       </Head>
       <Navbar />
       <Hero />
