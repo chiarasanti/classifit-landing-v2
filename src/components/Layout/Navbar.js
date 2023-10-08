@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link href="https://www.facebook.com/profile.php?id=61551922481738" target="_blank" className="nav-link hidden lg:block">
               Facebook
             </Link>
-            <Link href="mailto:classifit.studio@gmail.com" className="nav-link hidden lg:block" target="_blank">
+            <Link href="mailto:classifit.studio@gmail.com" className="nav-link hidden lg:block">
               classifit.studio@gmail.com
             </Link>
           </div>
