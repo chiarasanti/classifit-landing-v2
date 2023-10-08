@@ -16,7 +16,7 @@ export default function Hero() {
             gestionale online
           </span>{" "}
           che consente di monitorare lezioni, pacchetti e clienti - Tutto con
-          un'unica soluzione.
+          un&apos;unica soluzione.
         </p>
         <div className="py-10" />
         <Link
