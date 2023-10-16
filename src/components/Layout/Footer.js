@@ -19,7 +19,7 @@ export default function Footer() {
                 <Link href="mailto:classifit.studio@gmail.com" target="_blank" className="after:bg-white">classifit.studio</Link>
               </div>
               <div className="flex flex-col gap-4 mt-12 lg:mt-0">
-                <p className="text-base text-white/60">Link utili</p>
+                <p className="text-base text-white/60">Seguici</p>
                 <Link href="https://www.instagram.com/app.classi.fit/" target="_blank" className="after:bg-white">Instagram</Link>
                 <Link href="https://www.facebook.com/profile.php?id=61551922481738" target="_blank" className="after:bg-white">Facebook</Link>
               </div>
